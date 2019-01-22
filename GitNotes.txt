@@ -1,9 +1,9 @@
 git init
 git status
-touch newfile.txt
-echo 'Ruart Ranosa' >> newfile.txt
+touch newfile.txt						// create new file
+echo 'Ruart Ranosa' >> newfile.txt		// insert "Ruart Ranosa" to the text file
 
-
+USE ACCOUNT-----------------------------------
 *** Please tell me who you are.
 Run
   git config --global user.email "you@example.com"
@@ -12,15 +12,31 @@ Run
 to set your account's default identity.
 Omit --global to set the identity only in this repository.
 
-
-git add -A //adds all files to index
-git commit -m "message" // commits all files in the index
+COMMIT FILES----------------------------------
+git add -A 								//adds all files to index
+git commit -m "message" 				// commits all files in the index
 (working directory in now clean)
 
+BRANCHES--------------------------------------
 
 git branch								// shows available branches and active branch
 git branch new-feature 					// create a new branch
 git checkout new-feature 				// switch to new-feature branch
 git checkout -b anotherBranch 			// creates a new branch and automatically switches you 
 										   to that branch
+git branch -d new-feature				// deletes a branch named new-feature
 
+// commits only reflect on the active branch that you are in
+
+MERGING---------------------------------------
+
+git checkout <target_branch" 			// switch to where the file will be merged
+git merge new-feature					// merges the branch files with the active branch
+
+REMOTE REPOSITORY------------------------------
+
+// add the specified url as a remote repository with the name "origin"
+git remote add origin https://github.com/RuartRanosa/cmsc100-uv-11.git
+
+git remote -v 							// view remote repository urls
+git push origin master					// pushes "master" branch to remote repository "origin"
