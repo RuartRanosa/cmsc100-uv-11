@@ -1,2 +1,4 @@
 Ruart Ranosa
-Hello
+Hello World!
+
+Today's lesson is about git and GitHub

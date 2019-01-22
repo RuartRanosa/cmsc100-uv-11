@@ -1,0 +1,26 @@
+git init
+git status
+touch newfile.txt
+echo 'Ruart Ranosa' >> newfile.txt
+
+
+*** Please tell me who you are.
+Run
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+
+git add -A //adds all files to index
+git commit -m "message" // commits all files in the index
+(working directory in now clean)
+
+
+git branch								// shows available branches and active branch
+git branch new-feature 					// create a new branch
+git checkout new-feature 				// switch to new-feature branch
+git checkout -b anotherBranch 			// creates a new branch and automatically switches you 
+										   to that branch
+
