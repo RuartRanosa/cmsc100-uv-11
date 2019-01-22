@@ -17,6 +17,7 @@ git add -A 								//adds all files to index
 git commit -m "message" 				// commits all files in the index
 (working directory in now clean)
 
+git push <remote> <source_branch> 		// push commits if there is a remote branch connected
 BRANCHES--------------------------------------
 
 git branch								// shows available branches and active branch
